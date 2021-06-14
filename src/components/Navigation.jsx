@@ -7,7 +7,7 @@ function Navigation(props) {
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
           <Link class="navbar-brand" to="/">
-            React Multi-Page Website
+            Decentralized Electronic Health Records
           </Link>
           <div>
             <ul class="navbar-nav ml-auto">
@@ -23,20 +23,29 @@ function Navigation(props) {
               </li>
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/about" ? "active" : ""
+                  props.location.pathname === "/patients" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/about">
-                  About
+                <Link class="nav-link" to="/patients">
+                  Patients
                 </Link>
               </li>
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/contact" ? "active" : ""
+                  props.location.pathname === "/doctors" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/doctors">
+                  Doctors
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/about" ? "active" : ""
                 }`}
               >
                 <Link class="nav-link" to="/contact">
-                  Contact
+                  About
                 </Link>
               </li>
             </ul>

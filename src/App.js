@@ -1,13 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import {
-  Navigation,
-  Footer,
-  Home,
-  About,
-  Contact,
-  Patients,
-} from "./components";
+import { Navigation, Footer, Home, About, Patients } from "./components";
 function App() {
   return (
     <div className="App">
